@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Center Multiple Divs Demo</title>
+
+<style>
+#padre {
+	border: solid 1px #aaa;
+	text-align: center;/* detalle */
+	white-space: nowrap;
+	font-size: 20px;/* espacio entre divs */
+	letter-spacing: 15px;/* espacio entre divs */
+	line-height: 12px;
+	overflow: hidden;
+	width: 100%;}
+
+.hijo {
+	width: 80px;
+	height: 100px;
+	border: solid 1px #ccc;
+	display: inline-block;/* desplazamiento lineal */
+	letter-spacing: normal;
+	font-size: normal;
+	white-space: normal;
+	text-align: normal;
+	vertical-align: middle;}/* alineacion horizontal */
+
+.hijo {
+	*display: inline;/* desplazamiento lineal para IE66 */
+	*margin: 0 10px 0 10px;}/* espacio entre divs para IE6 */
+</style>
+</head>
+
+<body>
+
+<div id="padre" style="width:750px; margin:0 auto; padding:10px;">
+
+	<div class="hijo"></div>
+	<div class="hijo"></div>    
+	<div class="hijo"></div>
+	<div class="hijo"></div>
+	<div class="hijo"></div>
+	<div class="hijo"></div>
+	<div class="hijo"></div>
+
+    <br /><br /><br /><!-- saltos de linea -->
+                    
+	<div class="hijo"></div>
+	<div class="hijo"></div>
+	<div class="hijo"></div>    
+	<div class="hijo"></div>
+	<div class="hijo"></div>
+	<div class="hijo"></div>
+
+</div><!-- cerramos parent -->    
+
+</body>
+</html>

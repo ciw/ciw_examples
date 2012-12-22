@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+<style type="text/css">
+body {
+	background-color: #ccc;
+}
+
+#wrap{ position:relative;
+	left:50%;
+	margin:60px 0 0 -200px;
+	width:400px;
+	height:360px;
+	background-color:#5b7b99;}
+
+.cuadro{ width:100px; height:100px; 
+	background-color:white;
+	border-radius:10%;
+	box-shadow:0 1px 8px rgba(0, 0, 0, .6);
+	position:absolute;
+	opacity:.8;}
+
+#child1{ top:20px; left:20px;}
+#child2{ top:60px; left:60px;}
+#child3{ top:100px;left:100px;}
+#child4{ top:140px;left:140px;}
+#child5{ top:180px;left:180px;}
+#child6{ top:220px;left:220px;}	
+
+#child1:hover, #child2:hover, #child3:hover, #child4:hover, #child5:hover, #child6:hover{ opacity:1; z-index:100;}
+		
+	
+</style>
+</head>
+
+<body>
+	<div id="wrap">
+    	<div class="cuadro" id="child1"></div>
+        <div class="cuadro" id="child2"></div>
+        <div class="cuadro" id="child3"></div>
+        <div class="cuadro" id="child4"></div>
+        <div class="cuadro" id="child5"></div>
+        <div class="cuadro" id="child6"></div>
+    </div>
+</body>
+</html>

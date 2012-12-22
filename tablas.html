@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Tablas</title>
+</head>
+<style type="text/css">
+tr, td, th{border:1px solid #333; margin:0;}</style>
+<body>
+<h1>Listado de cursos</h1>
+<table>
+	<tr>
+		<td><strong>Curso</strong></td>
+		<td><strong>Horas</strong></td>
+		<td><strong>Horario</strong></td>
+	</tr>
+	<tr>
+		<td>CSS</td>
+		<td>20</td>
+		<td>16:00 - 20:00</td>
+	</tr>
+	<tr>
+		<td>HTML</td>
+		<td>20</td>
+		<td>16:00 - 20:00</td>
+	</tr>
+	<tr>
+		<td>Dreamweaver</td>
+		<td>60</td>
+		<td>16:00 - 20:00</td>
+	</tr>
+</table>
+
+
+<table>
+<tr>
+<td colspan="2">A</td>
+</tr>
+<tr>
+<td>B</td>
+<td>C</td>
+</tr>
+</table>
+
+<table>
+<tr>
+<td>A</td>
+</tr>
+<tr>
+<td>B</td>
+<td>C</td>
+</tr>
+</table>
+
+
+<h1>Fusión de columnas</h1>
+<table>
+<tr>
+<td colspan="3">A</td>
+<td>B</td>
+</tr>
+<tr>
+<td>C</td>
+<td colspan="2">D</td>
+<td>E</td>
+</tr>
+<tr>
+<td colspan="4">F</td>
+</tr>
+<tr>
+<td>G</td>
+<td>H</td>
+<td>I</td>
+<td>J</td>
+</tr>
+</table>
+
+
+
+
+
+
+<table summary="Análisis de ventas anuales">
+<caption>Análisis de ventas anuales</caption>
+<thead>
+<tr>
+<th rowspan="2" scope="col">AÑO</th>
+<th colspan="4" scope="col">Expansión de ventas</th>
+</tr>
+<tr>
+<th scope="col">Producto A</th>
+<th scope="col">Producto B</th>
+<th scope="col">Producto C</th>
+<th scope="col">Producto D</th>
+</tr>
+</thead>
+<tfoot>
+<tr>
+<th rowspan="2" scope="col">AÑO</th>
+<th scope="col">Producto A</th>
+<th scope="col">Producto B</th>
+<th scope="col">Producto C</th>
+<th scope="col">Producto D</th>
+</tr>
+<tr>
+<th colspan="4" scope="col">Expansión de ventas</th>
+</tr>
+</tfoot>
+<tbody>
+<tr>
+<th scope="row">N-3</th><td>-</td><td>-</td><td>-</td><td>-</td>
+</tr>
+<tr>
+<th scope="row">N-2</th><td>3</td><td>5</td><td>8</td><td>4</td>
+</tr>
+<tr>
+<th scope="row">N-1</th><td>4</td><td>4</td><td>7</td><td>3</td>
+</tr>
+<tr>
+<th scope="row">N</th><td>5</td><td>7</td><td>6</td><td>2</td>
+</tr>
+</tbody>
+</table>
+<!--
+	tr= table row: Fila de la tabla
+    td= table data cell: columnas de la fila
+    th= table header cell: celda de la Cabecera
+    
+    rowspan= fusiona filas
+    colspan= fusiona columnas
+    
+    scope= permite indicar si la celda es cabecera de la fila o de la columna 
+    <th scope=”row”> y <th scope=”col”> respectivamente.
+-->
+</body>
+</html>

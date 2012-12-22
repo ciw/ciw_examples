@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>box-sizing</title>
+	<style type="text/css">
+    	body{ margin:10px; text-align:center;}
+
+		.wrap{ width:200px; 
+			height:200px;
+			padding:20px;
+			background:purple; margin:0 auto;
+			border-radius:100%;}
+		
+		.hijo1{ /*width:100%;
+			height:100%;*/
+			width:-webkit-calc(100% - 40px);
+			height:-webkit-calc(100% - 40px);
+			padding:20px; 
+			background:green; 
+			border-radius:100%; 
+			-moz-box-sizing:padding-box;/*solo disponible para Mozilla*/}
+		
+		.hijo2{ width:100%; 
+			height:100%; 
+			background:yellow; 
+			border-radius:100%;}
+		
+		.hijo3{ /*width:100%;
+			height:100%;*/
+			width:-webkit-calc(100% - 50px);
+			height:-webkit-calc(100% - 50px);
+			padding:20px; 
+			background:green; 
+			border-radius:100%; 
+			border:5px solid white;
+			-moz-box-sizing:border-box;/*solo disponible para Mozilla*/}
+    </style>
+</head>
+
+<body>
+
+	<div class="wrap">
+    	<div class="hijo1">
+        	<div class="hijo2"></div>
+        </div>
+    </div>
+    
+    <div class="wrap">
+    	<div class="hijo3">
+        	<div class="hijo3">
+            	<div class="hijo3">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+</html>

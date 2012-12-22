@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+<style type="text/css">
+*{ margin:0;}
+body {
+	background-color: #ccc;}
+	
+#window{ position: fixed; top:130px; right:100px; bottom:100px; left:100px; 
+	background:white;
+	box-shadow:0 8px 50px rgba(0, 0, 0, .3);
+	border-radius:0 0 5px 5px;
+	
+	border-width:.125em; 
+	border-style: solid; ;
+	border-color:#aaa #aaa #aaa #aaa;
+	min-height:130px;
+	padding:0 10px 10px;
+	overflow:auto; }
+
+header{ position:fixed; top:101px; right:101px; left:101px; height:30px;
+	border-radius:5px 5px 0 0;
+	border-bottom:1px solid #989898;
+	background-image: -webkit-linear-gradient(#e8e8e8, #bdbdbd);}
+
+.boton{ width:12px; height:12px; 
+	border-radius:100%; 
+	background:#ccc; 
+	display:block;
+	display:inline-block; 
+	top:5px;
+	left:9px;
+	box-shadow:0 1px 3px rgba(0, 0, 0, .6) inset, 
+	0 1px 2px white; 
+	position:relative;
+}	
+
+.boton:after{
+	content:"";
+	position:absolute;
+	top:1px; left:2px;
+	width:8px; height:8px;
+	border-radius:100%;
+	background-image: -webkit-linear-gradient(rgba(255, 255, 255, .9), rgba(255, 255, 255, .001) 96%);
+	}
+
+.boton:hover{ box-shadow:0 1px 4px rgba(0, 0, 0, .8) inset, 
+						0 1px 2px white; }				
+	
+
+#rojo{ background-color:#f0463b;}
+#amarillo{ background-color:#f3bb57;}
+#verde{ background-color:#98d16f;}	
+
+p{ font-family:Verdana, Geneva, sans-serif; font-size:10px; line-height:1.6;}		
+		
+</style>
+</head>
+
+<body>
+	<div id="window">
+    	<header>
+        	<a href="" class="boton" id="rojo"></a>
+            <a href="" class="boton" id="amarillo"></a>
+            <a href="" class="boton" id="verde"></a>
+        </header>
+        
+        <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure</p>
+    
+    </div>
+</body>
+</html>

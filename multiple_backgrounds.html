@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>multiple background</title>
+<style type="text/css">
+*{ margin:0;}
+html{height:100%;}
+body {
+	background-color:#000;
+	background-image:url(img/bg-bar.png), url(img/bg-footer.jpg), url(img/bg-top.jpg);
+	background-repeat:no-repeat, repeat-x, no-repeat;
+	background-position:50% 0, 50% bottom, center top;
+	background-size:auto auto, 100% 100px, cover;
+	
+	/*
+	Cover: rellena completamente su contenedor respetando la proporción de la imagen de fondo, pero sacrifica partes de la imagen segun la proporción del contenedor.
+	Contain: respeta la proporcion y siempre se muestra la imegen de fondo de manera completa, no siempre rellena todo el espacio del contenedor, todo depende de las proporciones imagen-contenedor).
+	*/
+}
+</style>
+</head>
+
+<body>
+</body>
+</html>

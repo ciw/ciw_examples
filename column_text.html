@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+<style type="text/css">
+	.wrap{ background-color:#CCC; width:600px; margin:0 auto; padding:10px;
+	background-image:url(http://subtlepatterns.subtlepatterns.netdna-cdn.com/patterns/creampaper.png);
+	border-top:5px solid black; position:relative;}
+	
+	.wrap:after{ content:""; width:100%; background:yellow; border-top:2px solid black; top:3px; left:0; position: absolute; z-index:10000;}
+	
+	.col2{
+	-webkit-column-count: 2;
+    -webkit-column-gap: 10px;
+	}
+	
+	.col3{
+	-webkit-column-count: 3;
+    -webkit-column-gap: 20px;
+	-webkit-column-rule: 2px dotted red;
+	-webkit-column-span: all;
+	-webkit-column-fill: balance;
+	}
+	/*
+	Otras Propiedades
+		column-width: 300px;
+		column-count:3;
+		column-gap: 20px; 
+		column-rule:  <border-width> || <border-style> || <color>
+		
+		column-span: none or all;
+		permite que un elemento se extienden en todas las columnas cuando su valor se ajusta a todos . Un elemento que se extiende por más de una columna que se llama un elemento de expansión
+		
+		column-fill: auto or balance el relleno de la altura de la columna
+		La columna de relleno propiedad CSS controla cómo el contenido se repartió en columnas. El contenido está bien equilibrado, lo que significa que el contenido de todas las columnas tendrán la misma altura o, al usar auto , sólo ocupan la habitación las necesidades de contenido.
+	
+	*/
+</style>
+</head>
+
+<body>
+	<div class="wrap">
+        <p class="col2">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+    	<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+        <p class="col3">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+    </div>
+</body>
+</html>

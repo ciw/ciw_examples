@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>RELOJ</title>
+<style type="text/css">
+body {
+	background-color: #d5d5d5;
+}
+
+#reloj{ width:600px; height:600px;
+	margin:20px auto; background:#e3e3e3;
+	background-image: url(img/minutes.png);
+	background-position:center center;
+	background-size:94% 94%;
+	background-repeat:no-repeat;
+	border-radius:100%;
+	box-shadow:0 -4px 3px rgba(0, 0, 0, .1),
+			0 -2px 3px white inset;
+	position:relative;
+	}
+
+#hours{ width:26px; height:300px; background:#323232;
+	position:absolute; 
+	top:50%; margin-top:-40px;
+	right:50%; margin-right:-13px;
+	-webkit-transform-origin: center 40px;
+	-webkit-transform: rotate(180deg);
+	
+	-webkit-animation-name:rotate;
+	-webkit-animation-duration:432s;
+	-webkit-animation-timing-function:linear;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-direction:;
+	
+	-webkit-animation-delay:1s;}
+	
+#minute{ width:26px; height:300px; background:red;
+	position:absolute; 
+	top:50%; margin-top:-20px;
+	right:50%; margin-right:-13px;
+	-webkit-transform-origin: center 20px;
+	-webkit-transform: rotate(180deg);
+	
+	-webkit-animation-name:rotate;
+	-webkit-animation-duration:36s;
+	-webkit-animation-timing-function:linear;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-direction:;
+	
+	-webkit-animation-delay:1s;}
+
+#second{ width:14px; height:300px; background:blue;
+	position:absolute; 
+	top:50%; margin-top:-20px;
+	right:50%; margin-right:-7px;
+	-webkit-transform-origin: center 20px;
+	-webkit-transform: rotate(180deg);
+	
+	-webkit-animation-name:rotate;
+	-webkit-animation-duration:.6s;
+	-webkit-animation-timing-function:linear;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-direction:;
+	
+	-webkit-animation-delay:1s;}	
+		
+		
+	
+#reloj:hover #hours, #reloj:hover #minute, #reloj:hover #second{-webkit-animation-play-state:paused; opacity:.5;}
+
+@-webkit-keyframes rotate {100% { -webkit-transform: rotate(540deg); }}
+</style>
+</head>
+
+<body>
+
+</body>
+	<div id="reloj">
+   		<div id="hours"></div>
+        <div id="minute"></div>
+        <div id="second"></div>
+    </div>
+</html>

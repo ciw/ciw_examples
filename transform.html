@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Transform</title>
+	<style type="text/css">
+		*{-webkit-transition:all .5s;}
+        body {background-color: #FFF;}
+		.wrap{ width:720px; margin:0 auto; text-align:center;}
+        .cuadro, .cuadro2{ width:100px; height:100px;
+			background:#F93; border-radius:8px;
+			display:inline-block;
+			opacity:.8;
+			vertical-align:top;}
+		
+		.cuadro2{ background:#ff4037;}			
+
+        #rotate:active{-webkit-transform: rotate(130deg)}
+        
+		#scale:active{-webkit-transform: scale(1.1, .8)}
+		#scalex:active{-webkit-transform: scaleX(.6)}
+        #scaley:active{-webkit-transform: scaleY(.8)}
+		
+		#skew:active{-webkit-transform: skew(30deg, 10deg)}
+		#skewx:active{-webkit-transform: skewX(30deg)}
+		#skewy:active{-webkit-transform: skewY(10deg)}
+		
+        #translate:active{-webkit-transform: translate(10px, 20px)}
+		#translatex:active{-webkit-transform: translateX(20px)}
+		#translatey:active{-webkit-transform: translateY(10px)}
+		
+        #origin:active{-webkit-transform-origin:top right;/* punto de partida */
+				-webkit-transform: rotate(10deg);
+		}
+
+		.cuadro2{
+		width: 125px;
+		margin: 12px;
+		opacity: 0.6;
+		-webkit-transition: all .75s ease-in-out;}
+		
+		.cuadro2:hover {
+		opacity: 1;
+		-webkit-transform: scale(2.175) rotate(360deg);}
+
+
+
+    </style>
+</head>
+
+<body>
+<div class="wrap">
+	<div class="cuadro"></div>
+    <div class="cuadro" id="rotate">Rotate</div>
+    
+    <div class="cuadro" id="scale">scale</div>
+    <div class="cuadro" id="scalex">skew</div>
+    <div class="cuadro" id="scaley">skewx</div>
+    
+    <div class="cuadro" id="skew">skewy X Y</div>
+    <div class="cuadro" id="skewx">skewy X</div>
+    <div class="cuadro" id="skewy">skewy Y</div>
+    
+    <div class="cuadro" id="translate">translate X Y</div>
+    <div class="cuadro" id="translatex">translate X</div>
+    <div class="cuadro" id="translatey">translate Y</div>
+    
+    <div class="cuadro" id="origin">origin</div>
+    <div class="cuadro" id="perspective">perspective</div>
+
+	<br><br><br>
+
+    <div class="cuadro2"></div>
+    <div class="cuadro2"></div>
+    <div class="cuadro2"></div>
+    
+</div>    
+</body>
+</html>

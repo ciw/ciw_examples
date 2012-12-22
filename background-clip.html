@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Untitled Document</title>
+
+<link href='http://fonts.googleapis.com/css?family=Milonga' rel='stylesheet' type='text/css'>
+
+<style type="text/css">
+	*{ margin:20px 0 0;}
+	body {
+		background: #333 url(http://subtlepatterns.subtlepatterns.netdna-cdn.com/patterns/stressed_linen.png);
+		text-align:center;
+		letter-spacing:2px;
+	}
+	h1{font-family: 'Milonga', cursive;
+		font-size:56px;
+		color:transparent;
+		position:relative;
+		-webkit-filter: drop-shadow(0px 3px 4px black);
+	}
+	
+	#maskh1{background-image:;
+		background-image: -webkit-linear-gradient(#f0086b, #5a0d18);
+		-webkit-background-clip: text;
+		background-size:100%;
+		}
+	
+	#maskh2{
+		font-size:46px;
+		background: -webkit-linear-gradient(-45deg, #ffb8cc 25%, #d25679 25%, #d25679 50%, #ffb8cc 50%, #ffb8cc 75%, #d25679 75%, #d25679);
+		-webkit-background-clip: text;
+		background-size:21px 20px;
+		background-position:0 0;
+		-webkit-animation: horiztal 1s linear infinite;
+		}	
+		
+
+@-webkit-keyframes horiztal {100% { background-position:20px 0, 20px 0, 20px 0;}}
+		
+	#maskh3{
+		font-size:38px;
+		background: -webkit-linear-gradient(rgba(255, 255, 255, .8) 50%, rgba(255, 0, 0, .3) 50%) yellow;
+		-webkit-background-clip: text;
+		background-size:100% 10px;
+		background-position:0 0;
+		-webkit-animation: vertical 12s linear infinite;
+		}
+@-webkit-keyframes vertical {100% { background-position:0 160px;}}	
+		
+
+#cuadro{ width:400px; height:10px; margin:30px auto; border-radius:12px;
+
+	background:-webkit-linear-gradient(transparent, transparent 20%, rgba(0, 0, 0, .8) 50%, rgba(0, 0, 0, 1)),
+				-webkit-linear-gradient(45deg, rgba(255, 255, 255, .5), rgba(255, 255, 255, .5) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .5) 50%, rgba(255, 255, 255, .5) 75%, transparent 75%, transparent),
+				-webkit-linear-gradient(-45deg, rgba(255, 255, 255, .5), rgba(255, 255, 255, .5) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .5) 50%, rgba(255, 255, 255, .5) 75%, transparent 75%, transparent), 
+				#d25679;/*puedes cambiar este color para alterar la barra*/
+	background-position:0 0;
+	background-size:20px 20px;
+	box-shadow:0 1px 3px rgba(255, 255, 255, .6) inset, 0 1px 4px rgba(0, 0, 0, .8);
+	-webkit-animation: horiztal 1s linear infinite;
+}		
+</style>
+</head>
+
+<body>
+
+    <h1 id="maskh1">Hay milonga de amor!</h1>
+    
+    <h1 id="maskh2">hay temblor de gotán...</h1>
+    
+    <h1 id="maskh3">este tango es para voz!</h1>
+    
+    <div id="cuadro">
+    </div>
+   
+</body>
+</html>

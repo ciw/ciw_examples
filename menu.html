@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+<style type="text/css">
+	*{margin: 0; padding:0; }
+
+	body {
+		padding: 30px; 
+		font-family: "Helvetica Neue", helvetica, arial; 
+		background: grey;}
+
+	ul{	list-style: none;}
+	
+	ul#menu {
+		float: left;
+		width:auto;
+		background: #ccc;}
+
+	#menu > li {/*a todos los li de primer nivel*/
+		float: left;
+		position: relative;
+		border-right: 1px solid rgba(0,0,0,.1);}
+
+	#menu a {
+		display: block;
+		padding: 13px 20px;
+		text-decoration: none;
+		color:black;
+		font-size:12px;}
+
+	#menu li:hover a {
+		background: #333;
+		color: deepskyblue;}
+
+	#menu li ul  {
+		position: absolute;
+		left: 0;
+		width: 200px;/*ancho del submenu*/
+		display:none;}/*oculta el submenu*/
+
+
+	#menu li:hover ul {
+		display:block;}/*muestra el submenu*/
+
+	#menu li li a:hover {
+		color:white;
+		background:deepskyblue;}/*estilos submenu en hover*/
+</style>
+</head>
+
+<body>
+	<ul id="menu">
+ 			<li><a href="#">About Me</a></li>
+			<li><a href="#">Portfolio</a>
+                <ul>
+                    <li><a href="#">Lorem ipsum dolor</a></li>
+                    <li><a href="#">Dermentum luctus</a></li>
+                    <li><a href="#">Suspendisse fringilla</a></li>
+                </ul>
+			</li><!--/portafolio-->
+	
+    	<li><a href="#">Clients</a></li>
+		
+        <li><a href="#">Contact Me</a></li>
+       	
+        <li><a href="#">Support</a>
+        	<ul>
+                <li><a href="#">Lorem ipsum dolor</a></li>
+                <li><a href="#">Dermentum luctus</a></li>
+                <li><a href="#">Suspendisse fringilla</a></li>
+            </ul>
+		</li>
+        
+	</ul><!--/#menu-->
+</body>
+</html>

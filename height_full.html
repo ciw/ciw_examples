@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>Clearing a float container without source markup</title>
+<style type="text/css">
+
+body {
+background: #f8eedd; text-align:center;
+}
+
+.content {
+width:400px;
+margin:0 auto;	
+display: inline-block;/*Clave fundamental para q rellene pero se vuelve un elemento de envoltura*/
+background-color:#999;}
+
+.floatbox {
+float:left;
+width:150px;
+background: #773;color: #fff;
+}
+
+</style>
+<!--[if IE]>
+  <style type="text/css">
+  .clearfix {
+   zoom: 1;            /* triggers hasLayout and clearing effect */
+   display: block;     /* resets display for IE/Win */
+   }
+  </style>
+<![endif]-->
+</head>
+
+<body>
+	
+<div class="content">
+	<div class="floatbox">
+	 See how this float no longer protrudes out of the containing box, with no extra clearing 
+     element used in the siusiayuusyaususdfs iudfy isudyf iusdy iu siduf iofsdu foisu ofiusdof u.
+	</div>
+    Content
+</div>
+
+</body>
+</html>

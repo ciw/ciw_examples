@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Animaciones</title>
+<style type="text/css">
+	.cuadro{ width:200px; height:200px; margin:50px auto;
+	border-radius:10px;
+	background-color:#F39;}
+	
+	#animation{
+		/*nombre de la animacion*/
+		-webkit-animation-name:;
+		
+		/*tiempo de la animacion (1, 5, infinite)*/
+		-webkit-animation-duration:infinite;
+		
+		/*efectos de tiempos en la animacion*/
+		/*Otro ejemplo es:  steps(numero, [ start | end ])
+		-webkit-animation-timing-function: steps(25, end);*/
+		-webkit-animation-timing-function:;
+		
+		/*numero de veces segun el tiempo {ease, ease-in, ease-out, cubic-biezer(x, x, y, y)} */
+		-webkit-animation-iteration-count:;
+		
+		/*direccion de la animacion (normal, alternate)*/
+		-webkit-animation-direction:;
+		
+		/*podemos pausar y volver a poner en marcha nuestra animación
+			(paused: para pausar la animacion)
+			(running: para reanudar la animacion)
+		*/
+		-webkit-animation-play-state:;
+		
+		/*retraso*/
+		-webkit-animation-delay:;
+		
+		/*establece al final el fotograma clave al 100% despues de la ultima interaccion 
+			(forwards:fotograma clave 0%)
+			(backwards:fotograma 100%)
+			(both: las define al principio y al final)
+			(none: no aplica el valor de las propiedades)                                */
+		-webkit-animation-fill-mode:;
+		
+		/*shothand singleline*/
+		-webkit-animation:;}
+		
+/*		@-webkit-keyframes nombre-de-la-animacion {
+        0%  { opacity: 0; }
+        20% { opacity: 1; -webkit-transform:translateX(150px) }
+        63% { opacity: 0; -webkit-transform:translateY(150px) }
+        ...Tantos como queramos...
+        100% { opacity: 1; }
+		}
+		
+		@-webkit-keyframes nombre-de-la-animacion {
+        from { -webkit-transform:translateX(150px);}
+        to   { -webkit-transform:translateY(150px);}
+		}
+		
+		mas ejemplos http://daneden.me/animate/
+		http://tympanus.net/codrops/2012/01/10/animated-web-banners-with-css3/
+*/		
+
+#animation{
+		-webkit-animation-name:animacionx;
+		-webkit-animation-duration:infinite;
+		-webkit-animation-timing-function:;
+		-webkit-animation-iteration-count:;
+		-webkit-animation-direction:;
+		-webkit-animation-play-state:;
+		-webkit-animation-delay:;
+		-webkit-animation-fill-mode:;
+}
+@-webkit-keyframes animacionx {
+        0%  { opacity: 0; }
+        50% { opacity: 1; -webkit-transform:translateX(150px) }
+        100% { opacity: 1; }
+		}
+
+@-webkit-keyframes animaciony {
+        0%  { opacity: 0; }
+        50% { opacity: 1; -webkit-transform:translateX(150px) }
+        100% { opacity: 1; }
+		}
+
+
+@-webkit-keyframes animacionz {
+        0%  { opacity: 0; }
+        50% { opacity: 1; -webkit-transform:translateX(150px) }
+        100% { opacity: 1; }
+		}
+</style>
+</head>
+
+<body>
+
+	<div class="cuadro" id="animationx"></div>
+    <div class="cuadro" id="animationy"></div>
+    <div class="cuadro" id="animationz"></div>
+
+</body>
+</html>

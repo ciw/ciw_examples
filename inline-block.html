@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Untitled Document</title>
+<style type="text/css">
+body {
+	background-color: #ccc;
+}
+.teclado{ width:640px; height:432px;
+	margin:0 auto;
+	background-image: -webkit-linear-gradient(#9098a3, #48525f);
+	border-radius:0 0 4px 4px;
+	border-top:1px solid #252525;
+	box-shadow:0 1px 2px rgba(255, 255, 255, .5) inset;
+	text-align:center;
+	letter-spacing:8px;
+	line-height:1.6;}
+
+.teclado a{ text-decoration:none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	font-size:46px;
+	color:#000;
+	text-shadow:0 2px 0 white;
+	background-image: -webkit-linear-gradient(#fefefe, #cfd0d3);
+	padding:7px 1px 7px 9px;
+	margin-bottom:4px;
+	border-radius:6px;
+	display:inline-block;
+	box-shadow:0 1px 1px rgba(255, 255, 255, .6) inset, 0 3px 3px -1px rgba(0, 0, 0, 1), 0 6px 6px rgba(0, 0, 0, .5);
+	position:relative;
+	}	
+	
+.teclado a:hover{ top:-1px;}	
+.teclado a:active{ top:0;
+	box-shadow:0 3px 6px -1px rgba(0, 0, 0, 1)}	
+
+#espacio{ color:#525c69;
+	font-size:32px;
+	letter-spacing:0;
+	padding:4px 80px 4px;}
+
+#search{color:#fff;
+	text-shadow:0 -2px 0px #203f79;
+	font-size:32px;
+	letter-spacing:0;
+	padding:4px 16px 4px;
+	background-image: -webkit-linear-gradient(#4085f4, #1950dc);
+	box-shadow:0 1px 0 #6cacf9 inset, 0 3px 3px -1px rgba(0, 0, 0, 1), 0 6px 6px rgba(0, 0, 0, .5);
+	}	
+.teclado a.dark{ color:white;
+	background-image: -webkit-linear-gradient(#79818c, #535c68);
+	text-shadow:0 -2px 0px #363a40;
+	}	
+.teclado a.dark.down{font-size:32px;
+	padding:4px 16px 4px;}	
+</style>
+</head>
+
+<body>
+	<div class="teclado">
+	    <p>
+            <a href="#">Q</a>
+            <a href="#">W</a>
+            <a href="#">E</a>
+            <a href="#">R</a>
+            <a href="#">T</a>
+            <a href="#">Y</a>
+            <a href="#">U</a>
+            <a href="#">I</a>
+            <a href="#">O</a>
+            <a href="#">P</a>
+        </p>
+        
+        <p>
+            <a href="#">A</a>
+            <a href="#">S</a>
+            <a href="#">D</a>
+            <a href="#">F</a>
+            <a href="#">G</a>
+            <a href="#">H</a>
+            <a href="#">J</a>
+            <a href="#">K</a>
+            <a href="#">L</a>
+            <a href="#">Ñ</a>
+		</p>
+        
+        <p>
+            <a href="#" class="dark">@</a>
+            <a href="#">Z</a>
+            <a href="#">X</a>
+            <a href="#">C</a>
+            <a href="#">V</a>
+            <a href="#">B</a>
+            <a href="#">N</a>
+            <a href="#">M</a>
+            <a href="#" class="dark">#</a>
+		</p>
+        <p>
+        	<a href="#" class="dark down">.</a>
+            <a href="#" class="dark down">,</a>
+        	<a href="" id="espacio">espacio</a>
+            <a href="#" id="search">Buscar</a>
+        </p>
+    
+    </div>
+</body>
+</html>

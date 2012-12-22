@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+	<style type="text/css">
+		
+		.scene{
+			width:180px;
+			height:180px;
+			margin:40px auto;
+			background: url(img/sprites_180x180.jpg) 0 0 no-repeat;
+			animation: animate 2.8s steps(1, end) infinite;
+			-webkit-animation: animate .5s steps(1, end) infinite;
+			-moz-animation: animate 2.8s steps(1, end) infinite;
+			-o-animation: animate 2.8s steps(1, end) infinite;
+			}
+		
+		
+		@-webkit-keyframes animate{
+			0%  { background-position:0 0;}
+			7.14%  { background-position:-180px 0;}
+			14.28%  { background-position:-360px 0;}
+			21.42%  { background-position:-540px 0;}
+			28.56%  { background-position:-720px 0;}
+			
+			35.7%  { background-position:0 -180px;}
+			42.84%  { background-position:-180px -180px;}
+			49.98%  { background-position:-360px -180px;}
+			57.12%  { background-position:-540px -180px;}
+			64.26%  { background-position:-720px -180px;}
+			
+			71.4%  { background-position:0 -360px;}
+			78.54%  { background-position:-180px -360px;}
+			85.68%  { background-position:-360px -360px;}
+			92.82%  { background-position:-720px -360px;}
+			100%  { background-position:0 0;}
+					} 
+    </style>
+</head>
+
+<body>
+	<div class="scene" style="-webkit-animation: animate .5s steps(1, end) infinite 2s;">
+    </div>
+    
+    <div class="scene" style="-webkit-animation: animate .5s steps(1, end) infinite 4s;">
+    </div>
+    
+    <div class="scene" style="-webkit-animation: animate .5s steps(1, end) infinite 6s;">
+    </div>
+</body>
+</html>

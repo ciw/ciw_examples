@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>border-style</title>
+<style type="text/css">
+body {
+	background-color: #ccc;
+	text-align:center;
+	line-height:200%;
+	letter-spacing:40px;
+}
+.cuadro{ display:inline-block;
+	width:24%; height:120px;
+	background:rgba(255, 255, 255, .9);
+	border:thick solid #99DC30;}
+	
+#uno{border-radius: 0px 30px 70px 20px;
+	border-color: #85C226 #F7C200 #4493A0 #DF127B;}
+#dos{border-color: #85C226 #F7C200 #4493A0 #DF127B;
+	border-width: 5px 10px 15px 20px;}
+#tres{border-style: solid dotted groove double;
+	border-color: #85C226 #F7C200 #4493A0 #DF127B;}
+#cuatro{border-color: #85C226 #F7C200 #4493A0 #DF127B;}	
+	
+#cinco{border-radius:100px 100px 0 0 ;}
+#seis{border-radius:100px 100px 0 0 ;
+	border-width: 4px 30px 4px 30px;
+	border-style: groove ridge dashed groove;}
+#siete{border-radius: 20px;
+	border-color: #F7C200;}
+#ocho{border: 12px double violet;
+	border-width: 0 12px 0 12px; 
+	border-radius: 40px 40px 60px 60px;}
+#nueve{border-radius: 20px 100px 100px 20px;
+	border-color: #4493A0;}
+#diez{border: 12px groove orange; 
+	border-color: #99DC30 yellow #3CF deepPink;
+	border-radius:20px 100px 100px 20px;}
+
+#once{border-radius: 0 120px 0 120px;
+	border-color: #DF127B;}
+#doce{border-width:4px 30px 4px 30px;
+	border-style: solid;
+	border-color: #56c6d9 #56c6d9 #fe2192 #fe2192;
+	border-radius:0 120px 0 120px;}
+	
+</style>
+</head>
+
+<body>
+	<div class="cuadro" id="uno"></div>
+	<div class="cuadro" id="dos"></div>
+    <div class="cuadro" id="tres"></div>
+    <div class="cuadro" id="cuatro"></div>
+    <div class="cuadro" id="cinco"></div>
+    <div class="cuadro" id="seis"></div>
+    
+    <div class="cuadro" id="siete"></div>
+    <div class="cuadro" id="ocho"></div>
+    <div class="cuadro" id="nueve"></div>
+    <div class="cuadro" id="diez"></div>
+    <div class="cuadro" id="once"></div>
+    <div class="cuadro" id="doce"></div>
+</body>
+</html>

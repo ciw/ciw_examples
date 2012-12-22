@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Ejemplo de elementos Flotantes y propiedad Clear</title>
+<style type="text/css">
+	.content{ width:600px; padding:10px; background:#CCC; margin:0 auto;}
+	.content p{ color:#666; font-size:12px; text-align:center; margin:0; line-height:36px;}
+	.content a{ background:red; color:white; padding:10px; text-decoration:none;}
+	.content a:hover{ background:#093; color:#FF0;}
+	.content a:active{ opacity:.5;}
+	.content a:focus{ opacity:0.1;}
+	#before{ text-align:left; display:block; float:left;}
+	#after{ text-align:right; display:block; float:right;}
+	
+	.content:after{ content:""; clear:both; display:table;}
+</style>
+</head>
+
+<body>
+	<div class="content">
+    	<a id="before" href="#">ver anteriores</a>
+        <a id="after" href="#">Ver Siguientes</a>
+        <p>Hola yo soy un contenido bonito y agradable</p>
+        
+        
+    </div>
+</body>
+</html>

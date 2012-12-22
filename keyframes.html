@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Untitled Document</title>
+<style type="text/css">
+
+#padre{ width:600px; height:400px; background-color:#CC6; 
+margin:0 auto; position:relative;}
+.modulo{ width:200px; height:100px; background-color:#039; position:absolute; top:0; left:0;
+  -webkit-animation-name: colores;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-iteration-count: 2;
+  font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  z-index:10;}
+  
+.bloque{ width:200px; height:100px; background-color:#039;
+  -webkit-animation-name: mascolor;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+  position:absolute;
+  z-index:0;	} 
+  
+.modulo h1{ font-size:12px} 
+.modulo:hover h1{ 
+  -webkit-animation-name: texto;
+  -webkit-animation-duration: 0.3s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-delay:1s;
+}    
+
+
+@-webkit-keyframes colores {
+   from { background:#039;}
+   
+   to {background:#2F4;}
+}
+
+@-webkit-keyframes mascolor {
+ 0% {background:#039; top:0; right:0; -webkit-box-shadow: 1px 1px 5px #000;}
+25% {background:#9F0; top:200px; right:200px; width:50px;-webkit-box-shadow: 1px 1px 5px #F00;}
+50% {background:#000; top:200px; right:400px;-webkit-box-shadow: 1px 1px 5px #0F0;}
+75%	{background:#63C; top:0px; right:400px; height:50px;-webkit-box-shadow: 1px 1px 5px #000;}
+100% {background:#039; top:0; right:0;}
+}
+
+@-webkit-keyframes texto {
+ 0% { font-size:14px;}
+50% {font-size:18px;}
+100% {font-size:14px;}
+}
+
+</style>
+
+</head>
+
+
+<body>
+<div id="padre">
+	<div class="modulo"><h1>HOLA MUNDO</h1></div>
+	<div class="bloque"></div>
+
+</div>
+</body>
+</html>

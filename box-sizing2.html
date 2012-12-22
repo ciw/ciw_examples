@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>box-sizing</title>
+	<style type="text/css">
+    	body{ margin:10px; text-align:center;}
+		.cuadro{ width:100px;
+			height:100px;
+			padding:10px;
+			background:#666;
+			border:10px solid #09F;
+			margin:10px;
+			color:white;
+			font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+			font-size:12px;
+			text-align:center;}
+			
+		#uno{ -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+		#dos{ -moz-box-sizing: padding-box; -webkit-box-sizing: padding-box; box-sizing: padding-box;}
+		#tres{ -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box;}
+    </style>
+</head>
+
+<body>    
+    
+	<div class="cuadro">normal</div>
+    <div class="cuadro" id="uno">border-box</div>
+    <div class="cuadro" id="dos">padding-box</div>
+    <div class="cuadro" id="tres">content-box</div>
+
+</body>
+</html>

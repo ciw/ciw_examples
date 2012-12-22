@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Footer Abajo con Head</title>
+
+<style type="text/css">
+<!--
+body {
+	background-color: #818181;/* aqui el color q detecta IE6 */
+	margin:0px;
+	overflow-x:hidden;
+}
+html, body, #wrap, #cuerpo {height: 100%;}
+
+body > #wrap {height: auto; min-height: 100%; background-color:#818181; overflow:hidden; margin:0 auto;}
+
+#content {padding-bottom: 105px;}  /* debe ser la misma altura que footer */
+
+#header {           
+	width:100%;
+	position: relative;
+	height: 100px;
+	clear:both;           /* por si el contenido tiene elementos Float */
+	background-color:#1f326d;
+} 
+
+#footer {                 /* Altura total del  footer = height + margin + padding + border   */
+	width:100%;
+	border-top:#000 solid 5px;
+	position: relative;
+	margin-top: -105px;   /* valor negativo de la altura del footer */
+	height: 100px;
+	clear:both;           /* por si el contenido tiene elementos Float */
+	background-color:#1f326d;
+} 
+
+#cuerpo{/* el contenido */
+	width:800px;
+	background-color:#61b1f1;
+	margin:0 auto;
+	padding:8px; 
+	padding-bottom:32767px; margin-bottom:-32767px;}/* Altura ficticia que compesa el alto del monitor  */
+
+
+-->
+</style></head>
+
+<body>
+<div id="wrap"><!-- Envoltura general -->
+	<div id="header"></div><!-- Header arriba de Content -->
+	<div id="content" class="clearfix"><!-- aqui vaciamos todo -->
+
+   	  <div id="cuerpo">
+
+          <p>Lorem Ipsum is simply dummy text of the printing and   typesetting industry. </p>
+          <p>Lorem Ipsum has been the industry's standard dummy text ever   since the 1500s, 
+           when an unknown printer took a galley of type and   scrambled it to make a type 
+           specimen book. It has survived not only five centuries, but also the leap into 
+           electronic typesetting, remaining   essentially unchanged. </p>
+          <p>It was popularised in the 1960s with the release of Letraset sheets containing 
+           Lorem Ipsum passages, and more recently with desktop publishing software like Aldus 
+           PageMaker including versions of Lorem   Ipsum.</p>
+          <p>Lorem Ipsum is simply dummy text of the printing and   typesetting industry. </p>
+          <p>Lorem Ipsum has been the industry's standard dummy text ever   since the 1500s, 
+           when an unknown printer took a galley of type and   scrambled it to make a type 
+           specimen book. It has survived not only five centuries, but also the leap into 
+           electronic typesetting, remaining   essentially unchanged. </p>
+          <p>It was popularised in the 1960s with the release of Letraset sheets containing 
+           Lorem Ipsum passages, and more recently with desktop publishing software like Aldus 
+           PageMaker including versions of Lorem   Ipsum.</p>          
+
+      </div><!-- Cuerpo -->
+
+	</div> <!-- fin de content -->
+</div><!-- fin de wrap -->
+
+<div id="footer">
+</div><!-- fin de footer -->
+
+</body>
+</html>
+
+<!-- Breve Explicacion
+
+	En este ejercisio conocimos la estructura basica de HEAD+Contenido+Footer<br />
+	para q este ajustada al alto de la pantalla del usuario y de modo que el head y el footer
+    sean independientes del tamaño del contenido
+    
+	El ejercisio consta de 4 elementos:
+	Head - el cabesal que va antes de Content.
+	Content- donde vaciamos todo el Cuerpo del contenido.
+	Cuerpo- es el que contiene todo el contenido.
+	Footer- Este elemento siempre aparecera en la parte baja de la pantalla.
+    
+footer -->    
