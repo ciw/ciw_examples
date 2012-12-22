@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	.wrapp{
+		width: 600px;
+		padding: 10px;
+		margin: 0 auto;
+		background-color: #ccc;
+		border-top: 5px solid black;
+		position: relative;
+	}
+	.wrapp:after {
+		content: " ";
+		position: absolute;
+		top: 2px;
+		left: 0;
+		width: 100%;
+		border-top: 2px solid black;
+
+	}
+	.col2{
+		/*-webkit-column-count:2;*/
+		-webkit-column-gap:30px;
+		-webkit-column-width:50px;
+
+	}
+	.col3{
+		-webkit-column-count:3;
+		-webkit-column-gap:10px;
+		-webkit-column-rule:2px dotted red;
+	}
+	</style>
+</head>
+<body>
+	<div class="wrapp">
+		<p class="col2">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit neque voluptates possimus dolores nisi id maxime veniam nostrum ea. Omnis voluptatem ipsum architecto quia atque fuga tempora excepturi consequatur magnam.
+		</p>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias ea eius minus dolor nulla dolores vel soluta quos. Quaerat similique cum odio facere sint quibusdam pariatur animi asperiores vero tempora.
+		</p>
+		<p class="col3">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam cumque maxime ipsum nobis aperiam obcaecati ut reiciendis facilis eos corporis rem adipisci animi harum maiores laborum ea nam nesciunt enim?
+		</p>
+	</div>
+</body>
+</html>
